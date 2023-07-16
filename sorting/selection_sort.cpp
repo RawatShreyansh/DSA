@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void selectio_sort(int arr[] , int n){
+void selection_sort(int arr[] , int n){
     int i , j , min_index;
     for(i = 0 ; i < n ; i++){
         min_index = i;
@@ -30,7 +30,7 @@ int main()
     for(int i = 0 ; i < n ; i++)
         cin >> arr[i];
 
-    selectio_sort(arr , n);
+    selection_sort(arr , n);
     print_array(arr , n);
 
     return 0;
