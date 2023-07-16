@@ -5,13 +5,14 @@
 
 using namespace std;
 
-struct node {
+class Node{
+    public:
     int data;
-    struct node *next;
+    Node *next;
 };
 
 int main()
 {
-
+    
     return 0;
 }
