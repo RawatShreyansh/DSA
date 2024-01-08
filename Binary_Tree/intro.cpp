@@ -2,6 +2,7 @@
 
 using namespace std;
 
+// Binary Tree Node 
 struct node
 {
     int data;
@@ -56,14 +57,30 @@ int main()
     root -> right -> right = new node(50);
     root -> right -> left = new node(35);
 
-    cout << "Inorder traversal of binary tree : \n";
+        // Binary Tree structure
+        /*
+              30               -- root node / head node / parent node
+          /     \
+        /        \
+       20         40           -- child nodes of root node
+      / \         / \
+    /    \       /   \ 
+   15     25    35    50       --  leaf nodes
+        */
+
+    cout << "Inorder traversal of binary tree : \n";        // left node - root node - right node
     printInorder(root);
+
     cout <<"NULL \n";
-    cout << "Preorder traversal of binary tree : \n";
+
+    cout << "Preorder traversal of binary tree : \n";      // root node - left node - right node
     printPreorder(root);
+
     cout <<"NULL \n";
-    cout << "Postorder traversal of binary tree : \n";
+
+    cout << "Postorder traversal of binary tree : \n";    // left node - right node - root node
     printPostorder(root);
+
     cout << "NULL";
 
     return 0;
